@@ -34,5 +34,9 @@ describe('RomanNumeral.convertNumber', () =>{
   test ('it should return C if the number entered is 100', ()=>{
     const romanNumeral = new RomanNumeral(100);
     expect(romanNumeral.convertNumber()).toEqual("C");
-  })
+  });
+  test ('it should return D if the number entered is 500', () => {
+    const romanNumeral = new RomanNumeral(500);
+    expect(romanNumeral.convertNumber()).toEqual("D");
+  });
 });
