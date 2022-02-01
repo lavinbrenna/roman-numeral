@@ -8,7 +8,10 @@ RomanNumeral.prototype.convertNumber = function () {
     return "I";
   } else if (this.number === 5) {
     return "V";
-  } else {
+  } else if(this.number === 10){
+    return "X";
+  }
+  else {
     return "not I";
   }
 };
