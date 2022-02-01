@@ -19,4 +19,8 @@ describe('RomanNumeral.convertNumber', () =>{
     const romanNumeral = new RomanNumeral(2);
     expect(romanNumeral.convertNumber()).toEqual("not I");
   });
+  test('should return V if number entered is 5', () => {
+    const romanNumeral = new RomanNumeral(5);
+    expect(romanNumeral.convertNumber()).toEqual("V");
+  });
 });
