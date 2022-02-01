@@ -14,6 +14,8 @@ RomanNumeral.prototype.convertNumber = function () {
     return "L";
   } else if(this.number === 100){
     return "C";
+  } else if (this.number === 500){
+    return "D";
   } else {
     return "not I";
   }
