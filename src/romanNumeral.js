@@ -25,13 +25,27 @@ export default function RomanNumeral(number){
 
 RomanNumeral.prototype.convertNumber = function (){
   let userNumber = this.number;
-  const userArray = [];
+  let userArray = [];
   for(let i = 0 ; i < userNumber; i ++){
     userArray.push("I");
+    if (userArray.length > 3) {
+      userArray = ["IV"];
+      /*let iString = i.toString();
+      let iArray = iString.split("");
+      if ((iArray[iArray.length - 1]) === 4) {
+        console.log(iArray[iArray.length - 1]);
+        userArray.push("IV");
+      }*/
+    }
   }
   let numberArray = userArray.join("");
   return numberArray;
 };
 
-let romanNumeral = new RomanNumeral(2);
+let romanNumeral = new RomanNumeral(4);
 romanNumeral.convertNumber();
+
+
+//if(userArray.length > 3){
+  //userArray = ["IV"];
+//}

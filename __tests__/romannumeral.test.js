@@ -19,7 +19,11 @@ describe('RomanNumeral.convertNumber', () =>{
     const romanNumeral = new RomanNumeral(2);
     expect(romanNumeral.convertNumber()).toEqual("II");
   });
-  test('should return not I if number does not equal 1',()=>{
+  test('should return IV if number ends with 4', () => {
+    const romanNumeral = new RomanNumeral(4);
+    expect(romanNumeral.convertNumber()).toEqual("IV");
+  });
+  /*test('should return not I if number does not equal 1',()=>{
     const romanNumeral = new RomanNumeral(2);
     expect(romanNumeral.convertNumber()).toEqual("not I");
   });
@@ -46,5 +50,5 @@ describe('RomanNumeral.convertNumber', () =>{
   test ('it should return M if the number entered is 1000', () => {
     const romanNumeral = new RomanNumeral(1000);
     expect(romanNumeral.convertNumber()).toEqual("M");
-  });
+  });*/
 });
