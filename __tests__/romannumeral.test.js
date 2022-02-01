@@ -39,4 +39,8 @@ describe('RomanNumeral.convertNumber', () =>{
     const romanNumeral = new RomanNumeral(500);
     expect(romanNumeral.convertNumber()).toEqual("D");
   });
+  test ('it should return M if the number entered is 1000', () => {
+    const romanNumeral = new RomanNumeral(1000);
+    expect(romanNumeral.convertNumber()).toEqual("M");
+  });
 });
