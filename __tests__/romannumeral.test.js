@@ -15,6 +15,10 @@ describe('RomanNumeral.convertNumber', () =>{
     const romanNumeral = new RomanNumeral(1);
     expect(romanNumeral.convertNumber()).toEqual("I");
   });
+  test('should return II if number entered is 2', ()=>{
+    const romanNumeral = new RomanNumeral(2);
+    expect(romanNumeral.convertNumber()).toEqual("II");
+  });
   test('should return not I if number does not equal 1',()=>{
     const romanNumeral = new RomanNumeral(2);
     expect(romanNumeral.convertNumber()).toEqual("not I");
